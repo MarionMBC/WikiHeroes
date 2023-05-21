@@ -13,7 +13,7 @@ const Hero = () => {
         }
         navigate(-1);
     }
-    const {id, superhero, publisher, alter_ego, first_appearance, characters} = hero
+    const {superhero, publisher, alter_ego, first_appearance, characters} = hero
 
     return (
         <div className={'h-screen animate__animated animate__fadeInLeft md:px-24 md:pb-24'}>
