@@ -1,0 +1,70 @@
+.loginButton::before,
+.loginButton::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #29d4eb;
+    animation: wave 1.5s ease-in-out infinite;
+    opacity: 0;
+}
+
+
+
+
+.loginButton::before {
+    animation-delay: 0.1s;
+}
+
+.loginButton::after {
+    animation-delay: 0.3s;
+}
+
+.loginButton span {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #29d4eb;
+    z-index: 9;
+    transition: ease-in-out 0.4s;
+}
+
+.loginButton span::after {
+    content: 'Comenzar';
+    position: relative;
+    top: 35px;
+    font-weight: 500;
+    color: white;
+}
+
+.loginButton span:hover::after {
+    content: 'Comenzar';
+    position: relative;
+    top: 35px;
+    color: black;
+    font-weight: 500;
+}
+
+
+.loginButton span:hover {
+    transform: scale(1.1);
+    background-color: white;
+    transition: ease-in-out 0.1s;
+}
+
+
+
+@keyframes wave {
+    0% {
+        transform: scale(1);
+    }
+    15% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(4);
+    }
+}
